@@ -13,10 +13,14 @@ export class Item extends LitElement {
 
     render() {
         return html`<div>
-            <span>${this.item.date} </span>
-            <span>(${this.item.venue}) </span>
-            <span><a href=${this.item.url}>${this.item.title}</a></span>
-        </div> `;
+                <span>${this.item.date} </span>
+                <span>(${this.item.venue}) </span>
+                <span
+                    ><a href=${this.item.url}>${this.item.title}</a>${this.item.description &&
+                    html` - ${this.item.description}`}</span
+                >
+            </div>
+            <br />`;
     }
 }
 
