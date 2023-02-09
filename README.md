@@ -18,3 +18,19 @@ todo:
 -   the query to get the list of events takes forever
 -   make it configurable
 -   build setup
+-   fix all the janky date processing
+-   load site config from config json, so that you don't have to relaunch the server every time
+
+feature ideas:
+
+-   calendar layout
+-   load images
+-   filter by type (show / movie / etc)
+-   filter by date
+-   filter by venue
+-   extra fields on a per-site basis
+-   caching???
+-   a loading spinner
+-   pagination
+-   fetch event times as well
+-   automatically add to calendar
